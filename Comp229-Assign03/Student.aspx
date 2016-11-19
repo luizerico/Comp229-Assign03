@@ -82,7 +82,7 @@
 
                         </div>
                         <div class="modal-footer">
-                            <asp:Button runat="server" ID="saveStudent" OnClick="updateStudentOnClick" Text="Save" CssClass="btn btn-default" />
+                            <asp:Button runat="server" ID="updateStudent" OnClick="updateStudentOnClick" Text="Save" CssClass="btn btn-default" />
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
 
 
             <div class="row button-row">
-                <asp:Button runat="server" ID="deleteStudent" Text="Delete" CssClass="btn btn-danger" />
+                <asp:Button runat="server" ID="deleteStudent" OnClick="deleteStudentOnClick" Text="Delete" CssClass="btn btn-danger" />
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editStudent">Edit Student</button>
             </div>
         </div>
