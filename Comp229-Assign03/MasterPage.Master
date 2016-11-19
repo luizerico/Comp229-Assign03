@@ -7,14 +7,51 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <meta name="description" content="College Admin System. Centennial College" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/Assets/jquery/jquery-3.1.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/Assets/bootstrap/css/bootstrap.min.css" />
+    <script src="/Assets/bootstrap/js/bootstrap.js"></script>
+    <link type="text/css" rel="stylesheet" href="/Assets/general.css" />
+    <link rel="icon" href="/favicon.ico" />
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+
+    <div class="container-fluid">
+        <div id="header" class="row ">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img src="/resources/images/survey-icon-24.gif" style="margin-top: -5px;" />
+                        </a>
+                        <ul class="nav navbar-nav">
+                            <li><a href="/home.aspx">Home</a></li> 
+                            <li><a href="/student.aspx">Students</a></li>
+                            <li><a href="/course.aspx">Courses</a></li>
+                            <li><a href="/aboutus.aspx">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
-    </form>
+
+    <div id="body" class="row">
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </form>
+    </div>
+    <div id="footer">
+        <div class="container-fluid">
+            <div id="header" class="row text-center">
+                <p><a href="/aboutus.aspx">2017. College Admin System</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
